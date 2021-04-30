@@ -13,15 +13,18 @@ public class MainApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Simle JavaFx");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Dashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/style.css");
         Image icon = new Image("/images/hotline.png");
         primaryStage.getIcons().add(icon);
         primaryStage.setFullScreen(true);
         primaryStage.setFullScreenExitHint("");
+        primaryStage.setMaximized(true);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.centerOnScreen();
         primaryStage.show();
     }
 

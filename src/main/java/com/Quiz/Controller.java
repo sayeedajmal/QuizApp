@@ -1,23 +1,66 @@
 package com.Quiz;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextArea;
-import com.jfoenix.controls.JFXTextField;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
-public class Controller {
+public class Controller implements Initializable {
     @FXML
-    public JFXTextField name;
-    public JFXTextArea suggest;
-    public JFXButton submit;
-    public Label thank;
+    public GridPane gridpane = new GridPane();
 
-    public void submit(ActionEvent event) {
-        thank.setText("Thanks For Giving FeedBack!");
-        name.setText(null);
-        suggest.setText(null);
+    /* <<=================FOR-SIGNIn======================>> */
+    public void gotSingup(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Login");
+        stage.setFullScreen(true);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setFullScreenExitHint("");
+        stage.setMaximized(true);
+        stage.show();
+        /* CLOSING THE Login WINDOW */
+        ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
     }
+
+    /* <<=================FOR-SIGNUP======================>> */
+    public void signup(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Signup.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("SignUp");
+        stage.setFullScreen(true);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setFullScreenExitHint("");
+        stage.setMaximized(true);
+        stage.show();
+
+        /* CLOSING THE SIGNIN WINDOW */
+        ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
+    }
+
+    /* FOR EXIT */
+    @FXML
+    public void exit(ActionEvent event) {
+        ((Stage) (((Button) event.getSource()).getScene().getWindow())).close();
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+
 }
