@@ -63,6 +63,11 @@
                   <FontAwesomeIcon fill="#2dc993" glyphName="USER" layoutX="765.0" layoutY="350.0" selectionEnd="1" selectionFill="#20a476" selectionStart="0" size="2em" wrappingWidth="21.214285850524902" />
                   <FontAwesomeIcon fill="#2dc993" glyphName="LOCK" layoutX="765.0" layoutY="411.0" selectionEnd="1" selectionFill="#20a476" selectionStart="0" size="2em" wrappingWidth="21.214285850524902" />
                   <JFXButton alignment="CENTER" layoutX="977.0" layoutY="422.0" prefHeight="16.0" prefWidth="135.0" text="Forgot Password?" underline="true" />
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="1211.0" layoutY="14.0" prefHeight="11.0" prefWidth="13.0" ripplerFill="RED" style="-fx-background-color: #12A163;" text="X" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
                </children></Pane>
          </children>
       </FlowPane>
