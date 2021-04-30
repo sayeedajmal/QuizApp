@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" prefHeight="700.0" prefWidth="1300.0" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2fd299;">
+         <children>
+            <Pane prefHeight="668.0" prefWidth="1256.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-border-radius: 30px;">
+               <children>
+                  <ImageView fitHeight="652.0" fitWidth="545.0" layoutY="18.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="background">
+                     <image>
+                        <Image url="@../images/wave.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="528.0" fitWidth="619.0" layoutX="27.0" layoutY="91.0" nodeOrientation="INHERIT" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/bg.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="117.0" fitWidth="133.0" layoutX="879.0" layoutY="56.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/man.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="805.0" layoutY="179.0" prefHeight="55.0" prefWidth="266.0" text="WELCOME" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="764.0" layoutY="330.0" prefHeight="29.0" prefWidth="347.0" promptText="Username" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Monospaced Bold" size="15.0" />
+                     </font></JFXTextField>
+                  <JFXPasswordField alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="390.0" prefHeight="26.0" prefWidth="347.0" promptText="Password" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Monospaced Bold" size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="765.0" layoutY="489.0" prefHeight="37.0" prefWidth="347.0" ripplerFill="#392de8" style="-fx-background-color: #12A163; -fx-background-radius: 30px;" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="MathJax_Vector-Bold" size="26.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIcon fill="#2dc993" glyphName="USER" layoutX="765.0" layoutY="350.0" selectionEnd="1" selectionFill="#20a476" selectionStart="0" size="2em" wrappingWidth="21.214285850524902" />
+                  <FontAwesomeIcon fill="#2dc993" glyphName="LOCK" layoutX="765.0" layoutY="411.0" selectionEnd="1" selectionFill="#20a476" selectionStart="0" size="2em" wrappingWidth="21.214285850524902" />
+                  <JFXButton alignment="CENTER" layoutX="977.0" layoutY="422.0" prefHeight="16.0" prefWidth="135.0" text="Forgot Password?" underline="true" />
+               </children></Pane>
+         </children>
+      </FlowPane>
+   </children>
+</GridPane>
