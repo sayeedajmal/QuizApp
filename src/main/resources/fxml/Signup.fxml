@@ -68,6 +68,11 @@
                      </font>
                   </JFXButton>
                   <FontAwesomeIcon fill="#2dc993" glyphName="USER" layoutX="772.0" layoutY="319.0" selectionEnd="1" selectionFill="#20a476" selectionStart="0" size="2em" wrappingWidth="21.214285850524902" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="825.0" layoutY="631.0" prefHeight="26.0" prefWidth="220.0" style="-fx-background-color: white;" text="Created by || SAYEED AJMAL" textFill="RED">
+                     <font>
+                        <Font name="Bitstream Vera Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
          </children>
