@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="CENTER" prefHeight="700.0" prefWidth="1300.0" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Controller">
+<GridPane alignment="CENTER" prefHeight="700.0" prefWidth="1300.0" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Signup">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
    </columnConstraints>
@@ -46,12 +46,12 @@
                         <Font name="System Bold" size="45.0" />
                      </font>
                   </Label>
-                  <JFXTextField alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="292.0" prefHeight="36.0" prefWidth="347.0" promptText="Username" style="-fx-background-color: white;" unFocusColor="BLACK">
+                  <JFXTextField fx:id="signup_name" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="292.0" prefHeight="36.0" prefWidth="347.0" promptText="Username" style="-fx-background-color: white;" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXPasswordField alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="373.0" prefHeight="36.0" prefWidth="347.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="BLACK">
+                  <JFXPasswordField fx:id="signup_password" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="373.0" prefHeight="36.0" prefWidth="347.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
                      </font>

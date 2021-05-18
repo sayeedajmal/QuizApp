@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="gridpane" alignment="CENTER" prefHeight="700.0" prefWidth="1300.0" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Controller">
+<GridPane fx:id="gridpane" alignment="CENTER" prefHeight="700.0" prefWidth="1300.0" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Login">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
    </columnConstraints>
@@ -46,16 +46,16 @@
                         <Font name="System Bold" size="45.0" />
                      </font>
                   </Label>
-                  <JFXTextField alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="764.0" layoutY="330.0" prefHeight="29.0" prefWidth="347.0" promptText="Username" unFocusColor="BLACK">
+                  <JFXTextField fx:id="login_name" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="764.0" layoutY="330.0" prefHeight="29.0" prefWidth="347.0" promptText="Username" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
                      </font></JFXTextField>
-                  <JFXPasswordField alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="390.0" prefHeight="26.0" prefWidth="347.0" promptText="Password" unFocusColor="BLACK">
+                  <JFXPasswordField fx:id="login_password" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="390.0" prefHeight="26.0" prefWidth="347.0" promptText="Password" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
                      </font>
                   </JFXPasswordField>
-                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="765.0" layoutY="489.0" prefHeight="37.0" prefWidth="347.0" ripplerFill="#392de8" style="-fx-background-color: #12A163; -fx-background-radius: 30px;" text="LOGIN" textFill="WHITE">
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="765.0" layoutY="489.0" onAction="#login" prefHeight="37.0" prefWidth="347.0" ripplerFill="#392de8" style="-fx-background-color: #12A163; -fx-background-radius: 30px;" text="LOGIN" textFill="WHITE">
                      <font>
                         <Font name="MathJax_Vector-Bold" size="26.0" />
                      </font>
