@@ -2,12 +2,12 @@ package com.Quiz;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
-
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,11 +24,19 @@ public class Login implements Initializable {
     public JFXPasswordField login_password;
     public JFXButton login;
 
-    public void login() {
-        System.out.println(login_name.getText().toString());
-        System.out.println(login_password.getText().toString());
+    /* Calling Database Connection */
+    public Login() throws SQLException {
+        Database.create_database();
     }
 
+    Connection connection = Database.create_database();
+
+    /* Accessing login */
+    public void login() {
+        System.out.println("Clicked Login");
+    }
+
+    /* link for returning into Signup Page */
     public void signup(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Signup.fxml"));
         Scene scene = new Scene(root);
