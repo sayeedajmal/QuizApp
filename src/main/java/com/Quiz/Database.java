@@ -14,8 +14,8 @@ public class Database {
     }
 
     public static void main(String[] args) throws SQLException {
-        Connection connection=Database.create_database();
-        String record = "select * from TEST";
+        Connection connection = Database.create_database();
+        String record = "select * from SAYEED";
         Statement statement = connection.createStatement();
         statement.executeQuery(record);
         ResultSet resultSet = statement.getResultSet();
