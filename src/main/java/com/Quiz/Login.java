@@ -5,9 +5,11 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,8 +34,20 @@ public class Login implements Initializable {
     Connection connection = Database.create_database();
 
     /* Accessing login */
-    public void login() {
+    public void login(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Dashboard.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        scene.getStylesheets().add("/styles/style.css");
+        stage.setTitle("Login");
+        stage.setFullScreen(true);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setFullScreenExitHint("");
+        stage.setMaximized(true);
+        stage.show();
         System.out.println("Clicked Login");
+        ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
     }
 
     /* link for returning into Signup Page */
@@ -42,6 +56,7 @@ public class Login implements Initializable {
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
+        scene.getStylesheets().add("/styles/style.css");
         stage.setTitle("SignUp");
         stage.setFullScreen(true);
         stage.initModality(Modality.APPLICATION_MODAL);

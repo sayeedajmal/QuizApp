@@ -9,10 +9,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
-
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -56,6 +54,7 @@ public class Signup implements Initializable {
                 Scene scene = new Scene(root);
                 Stage stage = new Stage();
                 stage.setScene(scene);
+                scene.getStylesheets().add("/styles/style.css");
                 stage.setTitle("Login");
                 stage.setFullScreen(true);
                 stage.initModality(Modality.APPLICATION_MODAL);

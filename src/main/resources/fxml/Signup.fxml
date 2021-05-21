@@ -24,7 +24,7 @@
    <children>
       <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2fd299;">
          <children>
-            <Pane prefHeight="668.0" prefWidth="1256.0" style="-fx-background-radius: 30px; -fx-background-color: #009688; -fx-border-radius: 30px;">
+            <Pane prefHeight="668.0" prefWidth="1256.0" style="-fx-background-radius: 30px; -fx-background-color: #009688; -fx-border-radius: 30px;" styleClass="shadow" stylesheets="@../styles/style.css">
                <children>
                   <ImageView fitHeight="652.0" fitWidth="545.0" layoutY="18.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="background">
                      <image>
