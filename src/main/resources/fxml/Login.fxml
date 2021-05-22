@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="gridpane" alignment="CENTER" prefHeight="700.0" prefWidth="1300.0" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Login">
+<GridPane fx:id="gridpane" alignment="CENTER" prefHeight="700.0" prefWidth="1300.0" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Login">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
    </columnConstraints>
@@ -46,10 +46,12 @@
                         <Font name="System Bold" size="45.0" />
                      </font>
                   </Label>
+                  <FontAwesomeIcon glyphName="USER" layoutX="754.0" layoutY="356.0" size="2em" />
                   <JFXTextField fx:id="login_name" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="764.0" layoutY="330.0" prefHeight="29.0" prefWidth="347.0" promptText="Username" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
-                     </font></JFXTextField>
+                     </font>
+                  </JFXTextField>
                   <JFXPasswordField fx:id="login_password" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="390.0" prefHeight="26.0" prefWidth="347.0" promptText="Password" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
@@ -60,17 +62,15 @@
                         <Font name="MathJax_Vector-Bold" size="26.0" />
                      </font>
                   </JFXButton>
-                  <FontAwesomeIcon fill="#2dc993" glyphName="USER" layoutX="765.0" layoutY="350.0" selectionEnd="1" selectionFill="#20a476" selectionStart="0" size="2em" wrappingWidth="21.214285850524902" />
-                  <FontAwesomeIcon fill="#2dc993" glyphName="LOCK" layoutX="765.0" layoutY="411.0" selectionEnd="1" selectionFill="#20a476" selectionStart="0" size="2em" wrappingWidth="21.214285850524902" />
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="834.0" layoutY="552.0" onAction="#signup" prefHeight="37.0" prefWidth="207.0" ripplerFill="#392de8" style="-fx-background-radius: 30px; -fx-background-color: lightblue;" text="Don't Have Account ?" textFill="#6309e5">
+                     <font>
+                        <Font name="MathJax_Vector-Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
                   <JFXButton alignment="CENTER" layoutX="977.0" layoutY="422.0" prefHeight="16.0" prefWidth="135.0" text="Forgot Password?" underline="true" />
                   <JFXButton alignment="CENTER" buttonType="RAISED" cancelButton="true" contentDisplay="CENTER" layoutX="1211.0" layoutY="14.0" onAction="#exit" prefHeight="11.0" prefWidth="13.0" ripplerFill="RED" style="-fx-background-color: #12A163;" text="X" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="System Bold" size="14.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="834.0" layoutY="552.0" onAction="#signup" prefHeight="37.0" prefWidth="207.0" ripplerFill="#392de8" style="-fx-background-radius: 30px; -fx-background-color: lightblue;" text="Don't Have Account ?" textFill="#6309e5">
-                     <font>
-                        <Font name="MathJax_Vector-Bold" size="15.0" />
                      </font>
                   </JFXButton>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="828.0" layoutY="628.0" prefHeight="26.0" prefWidth="220.0" style="-fx-background-color: lightblue;" text="Created by || SAYEED AJMAL" textFill="RED">
@@ -78,7 +78,9 @@
                         <Font name="Bitstream Vera Serif Bold" size="13.0" />
                      </font>
                   </Label>
-               </children></Pane>
+                  <FontAwesomeIcon glyphName="LOCK" layoutX="755.0" layoutY="417.0" size="2em" />
+               </children>
+            </Pane>
          </children>
       </FlowPane>
    </children>

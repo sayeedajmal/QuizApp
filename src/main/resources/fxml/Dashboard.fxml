@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import de.jensd.fx.glyphs.weathericons.WeatherIcon?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -11,7 +13,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Dashboard">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
@@ -33,38 +35,59 @@
                         </Label>
                         <Pane layoutX="3.0" layoutY="32.0" prefHeight="760.0" prefWidth="183.0" style="-fx-background-color: #2a348e; -fx-background-radius: 10px 0px 0px 10px;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="38.0">
                            <children>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="15.0" layoutY="139.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px;" text="News" textFill="WHITE">
+                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="142.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5; -fx-text-fill: white;" text="    News" textFill="WHITE" wrapText="true">
                                  <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="16.0" />
+                                    <Font name="Lucida Bright Demibold Italic" size="19.0" />
                                  </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="LAPTOP" nodeOrientation="LEFT_TO_RIGHT" size="1.5em" wrappingWidth="21.0" />
+                                 </graphic>
                               </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="15.0" layoutY="196.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px;" text="Topics" textFill="WHITE">
+                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="221.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text="Topics" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                                  <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="16.0" />
+                                    <Font name="Lucida Bright Demibold Italic" size="19.0" />
                                  </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="MOBILE" nodeOrientation="LEFT_TO_RIGHT" size="1.8em" wrappingWidth="21.0" />
+                                 </graphic>
                               </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="15.0" layoutY="253.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px;" text="Questions" textFill="WHITE">
-                                 <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="16.0" />
-                                 </font>
-                              </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="367.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px;" text=" Favourites" textFill="WHITE" wrapText="true">
+                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="296.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text="  Questions" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                                  <font>
                                     <Font name="Lucida Bright Demibold Italic" size="18.0" />
                                  </font>
                                  <graphic>
-                                    <FontAwesomeIcon glyphName="HEART" nodeOrientation="LEFT_TO_RIGHT" size="1.2em" wrappingWidth="21.0" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="QUESTION" nodeOrientation="LEFT_TO_RIGHT" size="1.5em" wrappingWidth="21.0" />
                                  </graphic>
                               </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="310.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px;" text="   Requests" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="372.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text="   Requests" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                                  <font>
                                     <Font name="Lucida Bright Demibold Italic" size="18.0" />
                                  </font>
                                  <graphic>
-                                    <FontAwesomeIcon glyphName="UMBRELLA" nodeOrientation="LEFT_TO_RIGHT" size="1.5em" wrappingWidth="21.0" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="INSTAGRAM" nodeOrientation="LEFT_TO_RIGHT" size="1.5em" wrappingWidth="21.0" />
                                  </graphic>
                               </JFXButton>
+                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="445.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text=" Favourites" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Lucida Bright Demibold Italic" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="HEART" nodeOrientation="LEFT_TO_RIGHT" size="1.2em" wrappingWidth="21.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <WeatherIcon fill="WHITE" glyphName="CLOUD" layoutX="14.0" layoutY="57.0" size="3em" wrappingWidth="42.19921875" />
                            </children></Pane>
+                        <JFXTextField alignment="CENTER" focusColor="#0040ff" labelFloat="true" layoutX="414.0" layoutY="48.0" prefHeight="28.0" prefWidth="567.0" promptText="Search" unFocusColor="BLACK">
+                           <font>
+                              <Font name="Hack Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label fx:id="yourname" layoutX="221.0" layoutY="38.0" prefHeight="46.0" prefWidth="169.0" text="USERNAME">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon fill="#6f6f6f" fontSmoothingType="LCD" glyphName="SEARCH" layoutX="414.0" layoutY="69.0" size="1.7em" />
                      </children>
                   </AnchorPane>
                </children>
