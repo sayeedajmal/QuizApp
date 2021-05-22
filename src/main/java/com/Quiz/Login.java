@@ -57,6 +57,7 @@ public class Login implements Initializable {
                     stage.setFullScreenExitHint("");
                     stage.setMaximized(true);
                     stage.show();
+                    System.out.println(login_name.getText());
                     System.out.println("Login Sucessfully");
                     ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
                 } else {
