@@ -6,6 +6,24 @@ import com.jfoenix.controls.JFXTextField;
 public class GetterSitter {
     public JFXTextField login_name;
     public JFXPasswordField login_password;
+    String wow[];
+    String temp_username;
+
+    public String[] getWow() {
+        return wow;
+    }
+
+    public void setWow(String[] wow) {
+        this.wow = wow;
+    }
+
+    public String getTemp_username() {
+        return temp_username;
+    }
+
+    public void setTemp_username(String temp_username) {
+        this.temp_username = temp_username;
+    }
 
     public JFXTextField getLogin_name() {
         return login_name;

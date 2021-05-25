@@ -8,14 +8,8 @@
             "type": "java",
             "name": "Launch Database",
             "request": "launch",
-            "mainClass": "com.Quiz.Database",
+            "mainClass": "com.Quiz.Launch",
             "projectName": "QuizApp-Windows-Linux"
-        },
-        {
-            "type": "java",
-            "name": "Launch Launch",
-            "request": "launch",
-            "mainClass": "com.Quiz.Launch"
         }
     ]
 }
