@@ -1,98 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import de.jensd.fx.glyphs.weathericons.WeatherIcon?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Quiz.Dashboard">
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-   </rowConstraints>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1076.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane GridPane.columnIndex="1">
-         <children>
-            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1281.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <AnchorPane prefHeight="642.0" prefWidth="1281.0" style="-fx-background-color: white;">
-                     <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="2.0" prefHeight="30.0" prefWidth="1275.0" style="-fx-background-color: gray; -fx-background-radius: 20px;" text="DASHBOARD" textFill="WHITE" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="2.0">
-                           <font>
-                              <Font name="Fira Code SemiBold" size="22.0" />
-                           </font>
-                        </Label>
-                        <Pane layoutX="3.0" layoutY="32.0" prefHeight="760.0" prefWidth="183.0" style="-fx-background-color: #2a348e; -fx-background-radius: 10px 0px 0px 10px;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="38.0">
-                           <children>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="142.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5; -fx-text-fill: white;" text="    News" textFill="WHITE" wrapText="true">
-                                 <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="19.0" />
-                                 </font>
-                                 <graphic>
-                                    <FontAwesomeIcon fill="WHITE" glyphName="LAPTOP" nodeOrientation="LEFT_TO_RIGHT" size="1.5em" wrappingWidth="21.0" />
-                                 </graphic>
-                              </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="221.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text="Topics" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                                 <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="19.0" />
-                                 </font>
-                                 <graphic>
-                                    <FontAwesomeIcon fill="WHITE" glyphName="MOBILE" nodeOrientation="LEFT_TO_RIGHT" size="1.8em" wrappingWidth="21.0" />
-                                 </graphic>
-                              </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="296.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text="  Questions" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                                 <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="18.0" />
-                                 </font>
-                                 <graphic>
-                                    <FontAwesomeIcon fill="WHITE" glyphName="QUESTION" nodeOrientation="LEFT_TO_RIGHT" size="1.5em" wrappingWidth="21.0" />
-                                 </graphic>
-                              </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="372.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text="   Requests" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                                 <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="18.0" />
-                                 </font>
-                                 <graphic>
-                                    <FontAwesomeIcon fill="WHITE" glyphName="INSTAGRAM" nodeOrientation="LEFT_TO_RIGHT" size="1.5em" wrappingWidth="21.0" />
-                                 </graphic>
-                              </JFXButton>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="15.0" layoutY="445.0" prefHeight="57.0" prefWidth="154.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #039BE5;" text=" Favourites" textFill="WHITE" wrapText="true">
-                                 <font>
-                                    <Font name="Lucida Bright Demibold Italic" size="18.0" />
-                                 </font>
-                                 <graphic>
-                                    <FontAwesomeIcon fill="WHITE" glyphName="HEART" nodeOrientation="LEFT_TO_RIGHT" size="1.2em" wrappingWidth="21.0" />
-                                 </graphic>
-                              </JFXButton>
-                              <WeatherIcon fill="WHITE" glyphName="CLOUD" layoutX="14.0" layoutY="57.0" size="3em" wrappingWidth="42.19921875" />
-                           </children></Pane>
-                        <JFXTextField alignment="CENTER" focusColor="#0040ff" labelFloat="true" layoutX="414.0" layoutY="48.0" prefHeight="28.0" prefWidth="567.0" promptText="Search" unFocusColor="BLACK">
-                           <font>
-                              <Font name="Hack Bold" size="14.0" />
-                           </font>
-                        </JFXTextField>
-                        <Label fx:id="yourname" layoutX="221.0" layoutY="38.0" prefHeight="46.0" prefWidth="169.0" text="USERNAME">
-                           <font>
-                              <Font name="Lucida Sans Typewriter Bold" size="19.0" />
-                           </font>
-                        </Label>
-                        <FontAwesomeIcon fill="#6f6f6f" fontSmoothingType="LCD" glyphName="SEARCH" layoutX="414.0" layoutY="69.0" size="1.7em" />
-                     </children>
-                  </AnchorPane>
-               </children>
-            </StackPane>
-         </children>
-      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="556.0" layoutY="120.0" style="-fx-background-color: gray; -fx-background-radius: 10px;" text="DashBoard" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Liberation Sans Narrow Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="60.0" prefHeight="41.0" prefWidth="161.0" text="Username" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="802.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Lato Black Italic" size="19.0" />
+         </font>
+      </Label>
+      <WeatherIcon fill="RED" glyphName="CLOUD" layoutX="25.0" layoutY="95.0" size="3em" underline="true" wrappingWidth="42.19921875" />
+      <JFXTextField alignment="CENTER" focusColor="#0040ff" labelFloat="true" layoutX="326.0" layoutY="68.0" prefHeight="29.0" prefWidth="432.0" promptText="Search" unFocusColor="BLACK" AnchorPane.rightAnchor="318.0">
+         <font>
+            <Font name="Monospaced Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTabPane layoutX="20.0" layoutY="109.0" prefHeight="660.0" prefWidth="1066.0" rotateGraphic="true" side="LEFT" style="-fx-border-color: blue; -fx-border-radius: 10px; -fx-border-width: 2px;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="110.0">
+         <tabs>
+            <Tab text="News">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1030.0" style="-fx-background-color: lightgray;" />
+              </content>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="GOOGLE" size="1.5em" />
+               </graphic>
+            </Tab>
+            <Tab text="Topics">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" />
+              </content>
+               <graphic>
+                  <FontAwesomeIcon glyphName="FACEBOOK" size="1.5em" />
+               </graphic>
+            </Tab>
+            <Tab text="Questions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;" />
+              </content>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="QUESTION" size="1.5em" />
+               </graphic>
+            </Tab>
+            <Tab text="Requests">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightyellow;" />
+              </content>
+               <graphic>
+                  <FontAwesomeIcon glyphName="INSTAGRAM" size="1.5em" />
+               </graphic>
+            </Tab>
+            <Tab text="Favourite">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;" />
+              </content>
+               <graphic>
+                  <FontAwesomeIcon glyphName="HEART" size="1.5em" />
+               </graphic>
+            </Tab>
+         </tabs></JFXTabPane>
    </children>
-</GridPane>
+</AnchorPane>
