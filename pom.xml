@@ -55,7 +55,7 @@
         <dependency>
             <groupId>com.gluonhq</groupId>
             <artifactId>charm-glisten</artifactId>
-            <version>4.4.4</version>
+            <version>4.4.1</version>
         </dependency>
     </dependencies>
 

@@ -21,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -29,6 +30,7 @@ public class Login implements Initializable {
     public JFXTextField login_name = new JFXTextField();
     public JFXPasswordField login_password;
     public JFXButton login;
+    public Label invalid;
 
     /* Calling Database Connection */
     public Login() throws SQLException {
@@ -69,13 +71,13 @@ public class Login implements Initializable {
                     System.out.println("Login Sucessfully");
                     ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
                 } else {
-                    System.out.println("Username or Password is Invalid");
+                    invalid.setText("Invalid Usrename or Password");
                 }
             } else {
-                System.out.println("Fill out All Fields");
+                invalid.setText("Fill All Fields");
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Something Wrong");
         }
     }
 

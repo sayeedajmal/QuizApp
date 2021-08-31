@@ -9,37 +9,44 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1076.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1076.0" style="-fx-background-color: #347FF6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="556.0" layoutY="120.0" style="-fx-background-color: gray; -fx-background-radius: 10px;" text="DashBoard" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="556.0" layoutY="120.0" style="-fx-background-color: blue; -fx-background-radius: 10px;" text="DashBoard" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
          <font>
             <Font name="Liberation Sans Narrow Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="113.0" layoutY="60.0" prefHeight="41.0" prefWidth="161.0" text="Username" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="802.0" AnchorPane.topAnchor="60.0">
+      <Label layoutX="87.0" layoutY="60.0" prefHeight="41.0" prefWidth="204.0" text="Username" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="785.0" AnchorPane.topAnchor="60.0">
          <font>
             <Font name="Lato Black Italic" size="19.0" />
          </font>
       </Label>
       <WeatherIcon fill="RED" glyphName="CLOUD" layoutX="25.0" layoutY="95.0" size="3em" underline="true" wrappingWidth="42.19921875" />
-      <JFXTextField alignment="CENTER" focusColor="#0040ff" labelFloat="true" layoutX="326.0" layoutY="68.0" prefHeight="29.0" prefWidth="432.0" promptText="Search" unFocusColor="BLACK" AnchorPane.rightAnchor="318.0">
+      <JFXTextField alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="326.0" layoutY="68.0" prefHeight="29.0" prefWidth="432.0" promptText="Search" style="-fx-background-color: white;" unFocusColor="BLACK" AnchorPane.leftAnchor="326.0" AnchorPane.rightAnchor="318.0">
          <font>
-            <Font name="Monospaced Bold" size="13.0" />
+            <Font name="Monospaced Bold" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTabPane layoutX="20.0" layoutY="109.0" prefHeight="660.0" prefWidth="1066.0" rotateGraphic="true" side="LEFT" style="-fx-border-color: blue; -fx-border-radius: 10px; -fx-border-width: 2px;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="110.0">
+      <JFXTabPane layoutX="8.0" layoutY="111.0" prefHeight="659.0" prefWidth="1063.0" rotateGraphic="true" side="LEFT" style="-fx-border-color: blue; -fx-border-width: 2px;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="111.0">
          <tabs>
             <Tab text="News">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1030.0" style="-fx-background-color: lightgray;" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1030.0" style="-fx-background-color: #BDBDBD;" />
               </content>
                <graphic>
-                  <FontAwesomeIcon fill="WHITE" glyphName="GOOGLE" size="1.5em" />
+                  <FontAwesomeIcon glyphName="GOOGLE" size="1.5em" />
                </graphic>
             </Tab>
             <Tab text="Topics">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #64B5F6;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="75.0" prefHeight="81.0" prefWidth="391.0" text="This is The Pane of Topics" textFill="WHITE" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="318.0" AnchorPane.rightAnchor="317.0" AnchorPane.topAnchor="75.0">
+                           <font>
+                              <Font name="Droid Sans Fallback" size="27.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
               </content>
                <graphic>
                   <FontAwesomeIcon glyphName="FACEBOOK" size="1.5em" />
@@ -47,15 +54,15 @@
             </Tab>
             <Tab text="Questions">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #757575;" />
               </content>
                <graphic>
-                  <FontAwesomeIcon fill="WHITE" glyphName="QUESTION" size="1.5em" />
+                  <FontAwesomeIcon glyphName="QUESTION" size="1.5em" />
                </graphic>
             </Tab>
             <Tab text="Requests">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightyellow;" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #EEEEEE;" />
               </content>
                <graphic>
                   <FontAwesomeIcon glyphName="INSTAGRAM" size="1.5em" />
@@ -63,12 +70,13 @@
             </Tab>
             <Tab text="Favourite">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1E88E5;" />
               </content>
                <graphic>
                   <FontAwesomeIcon glyphName="HEART" size="1.5em" />
                </graphic>
             </Tab>
          </tabs></JFXTabPane>
+      <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="760.0" layoutY="92.0" size="2em" AnchorPane.bottomAnchor="682.2857151031494" AnchorPane.rightAnchor="291.8571434020996" AnchorPane.topAnchor="69.71428489685059" />
    </children>
 </AnchorPane>

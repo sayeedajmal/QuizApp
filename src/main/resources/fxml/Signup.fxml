@@ -36,7 +36,7 @@
                         <Image url="@../images/bg.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="117.0" fitWidth="133.0" layoutX="879.0" layoutY="56.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="123.0" fitWidth="123.0" layoutX="879.0" layoutY="56.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/man.png" />
                      </image>
@@ -46,12 +46,12 @@
                         <Font name="System Bold" size="45.0" />
                      </font>
                   </Label>
-                  <JFXTextField fx:id="signup_name" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="292.0" prefHeight="36.0" prefWidth="347.0" promptText="Username" style="-fx-background-color: white;" unFocusColor="BLACK">
+                  <JFXTextField fx:id="signup_name" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="292.0" prefHeight="36.0" prefWidth="347.0" promptText="Enter Username" style="-fx-background-color: white;" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXPasswordField fx:id="signup_password" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="373.0" prefHeight="36.0" prefWidth="347.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="BLACK">
+                  <JFXPasswordField fx:id="signup_password" alignment="CENTER" focusColor="#24eda7" labelFloat="true" layoutX="765.0" layoutY="373.0" prefHeight="36.0" prefWidth="347.0" promptText="Enter Password" style="-fx-background-color: white;" unFocusColor="BLACK">
                      <font>
                         <Font name="Monospaced Bold" size="15.0" />
                      </font>
@@ -72,13 +72,13 @@
                         <Font name="Bitstream Vera Serif Bold" size="13.0" />
                      </font>
                   </Label>
-                  <Label fx:id="already" alignment="CENTER" layoutX="802.0" layoutY="463.0" prefHeight="36.0" prefWidth="273.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" textFill="WHITE" wrapText="true">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </Label>
                   <FontAwesomeIcon fill="#ffa200" glyphName="USER" layoutX="769.0" layoutY="320.0" size="2.5em" wrappingWidth="24.0" />
                   <FontAwesomeIcon fill="#ffa200" glyphName="LOCK" layoutX="771.0" layoutY="404.0" size="2.5em" wrappingWidth="24.0" />
+                  <Label fx:id="invalid" alignment="CENTER" layoutX="762.0" layoutY="483.0" prefHeight="36.0" prefWidth="347.0" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Georgia Bold" size="21.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
          </children>
