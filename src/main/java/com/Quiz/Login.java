@@ -77,7 +77,7 @@ public class Login implements Initializable {
                 invalid.setText("Fill All Credentials");
             }
         } catch (Exception e) {
-            System.out.println("Something Wrong");
+            System.out.println("Something Big Happened");
         }
     }
 
