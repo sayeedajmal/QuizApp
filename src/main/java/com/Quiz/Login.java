@@ -74,7 +74,7 @@ public class Login implements Initializable {
                     invalid.setText("Invalid Usrename or Password");
                 }
             } else {
-                invalid.setText("Fill All Fields");
+                invalid.setText("Fill All Credentials");
             }
         } catch (Exception e) {
             System.out.println("Something Wrong");
