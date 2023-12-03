@@ -10,8 +10,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mainClass>com.Quiz.MainApp</mainClass>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
 
@@ -55,12 +55,15 @@
         <dependency>
             <groupId>com.gluonhq</groupId>
             <artifactId>charm-glisten</artifactId>
-            <version>4.4.1</version>
+            <version>6.0.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/charm-glisten-6.0.2.jar</systemPath>
         </dependency>
     </dependencies>
 
 
     <build>
+    <finalName>QuizApp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
